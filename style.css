@@ -109,7 +109,7 @@ h1{
     display: none;
 }
 
-.user-info-container{
+.user-info-container.active{
     display: flex;
 }
 
@@ -223,3 +223,39 @@ h1{
     color: rgba(255, 255, 255, 0.7);
     background-color: var(--colorDark1);
 }  
+    
+@media (max-width: 470px){
+    .wrapper{
+        height: fit-content;
+    }
+    .parameter-container{
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .parameter-container.parameter{
+        font-size: 3rem;
+     }
+    .parameter{
+    gap:10px 11px;
+   } 
+
+   .tab{
+    row-gap: 3rem;
+    font-size: 1rem;
+   }
+}
+
+@media (max-width: 1024px){
+    .wrapper{
+        height: fit-content;
+    }
+    .parameter-container{
+        display: flex;
+        width: 480px;
+        margin-bottom: 4rem;
+    }
+
+}
