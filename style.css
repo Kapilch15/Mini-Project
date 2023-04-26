@@ -226,6 +226,7 @@ h1{
     
 @media (max-width: 470px){
     .wrapper{
+        width: 450px;
         height: fit-content;
     }
     .parameter-container{
