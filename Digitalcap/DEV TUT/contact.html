@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <nav id="sticky-nav">
+        <div>
+          <h1 class="logo">DigitalCap</h1>
+        </div>
+        <ul>
+          <li><a class="link-m" href="/home.html">Home</a></li>
+          <li><a class="link-m" href="/about.html">About</a></li>
+          <li><a class="link-m" href="#services">Services</a></li>
+          <li><a class="link-m" href="/contact.html">Contact Us</a></li>
+        </ul>
+        <div class="icon-btn">
+          <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <div id="contact-container">
+        <figure id="contact-img">
+          <img class="con-image" src="./Proj-Images/contact.jpg" alt="contact image" loading="lazy">
+        </figure>
+        <aside id="span-txt">
+          <img class="svg-contact" src="./Proj-Images/phone.svg" alt="phone" loading="lazy">
+          <b>Get the help you need</b>
+          <br>
+          <span class="text-1">Give us a few details and we'll offer the best solution to you.</span class="text-1">
+          <br>
+          <span>connect by phone, chat, email and more...</span>
+        </aside>
+      </div>
+        <p class="contacts">
+          <h2 class="sub-head">Contact Us</h2>
+        </p>
+        <div id="form-fluid">
+          <form action="https://api.web3forms.com/submit" method="POST" class="form-container">
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="8c6c7184-732f-47a9-a77d-7703559e7d11">
+        
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <input class="form-control" type="text" name="name" placeholder="Name" required>
+            <input class="form-control" type="email" name="email" placeholder="Email" required>
+            <input class="form-control" type="tel" name="phone" placeholder="Your Phone no." required>
+            <textarea class="form-control" name="message" rows="8" placeholder="Type message here..." required></textarea>
+        
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <!-- Custom Confirmation / Success Page -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+        
+            <button id="contact-btn" type="submit">Submit</button>
+        </form>
+        
+        </div>
+  
+      <script src="script.js"></script>
+</body>
+</html>
